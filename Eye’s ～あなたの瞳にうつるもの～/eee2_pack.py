@@ -142,7 +142,7 @@ for file in files:
     b = f.read()
     if xor != 0:
         for i in b:
-            j = i ^ xor
+            j = i
             bt = struct.pack('B', j)
             fw.write(bt)
     else:
